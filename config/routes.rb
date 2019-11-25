@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   resources :costumes, only:[:create, :new, :show, :index] do
     resources :reservations, only:[:new, :create]
   end
-  namespace :owner do ==>> meme chose avec 'renter'
+  namespace :users do
     resources :costumes, only: [:index]
   end
-  namespace :owner do
+  namespace :users do
     resources :reservations, only: [:index]
   end
 end
