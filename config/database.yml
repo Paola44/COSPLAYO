@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: COSPLAYO_production
-  username: COSPLAYO
-  password: <%= ENV['COSPLAYO_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
