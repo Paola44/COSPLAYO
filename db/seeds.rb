@@ -15,12 +15,15 @@ User.destroy_all if Rails.env.development?
 puts "Destroy réservation "
 Reservation.destroy_all if Rails.env.development?
 
+
+
+
 puts 'Creating costumes...'
 costume1 = Costume.new(name: "Iron man", description: "metalic armor blood and gold", image: "itv974hlnykchstlnoyx.jpg", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
 costume1.save!
 
 puts 'Creating users...'
-user1 = User.new(first_name: "Zinedine", last_name:"Zidane" email: "zinedine.zidane@yopmail.com", avatar_url: "")
+user1 = User.new(first_name: "Zinedine", last_name:"Zidane" email: "zinedine.zidane@yopmail.com", avatar_url: "7755322402_zinedine-zidane-en-novembre-2012-a-marseille_k39skd.jpg")
 user1.save!
 
 puts 'Creating reservations...'
