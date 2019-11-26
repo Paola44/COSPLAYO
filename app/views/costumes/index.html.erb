@@ -2,10 +2,10 @@
 
 <% @costumes.each do |costume| %>
   <div class="card-trip">
-    <%= cl_image_tag("joey-nicotra-aQSPWSxCweY-unsplash_wziuyz.jpg",width: 200, height: 300, crop: :fill) %>
+    <%= link_to cl_image_tag("joey-nicotra-aQSPWSxCweY-unsplash_wziuyz.jpg",width: 200, height: 300, crop: :fill), costume_path(costume) %>
     <div class="card-trip-infos">
       <div>
-        <h2><%= costume.name %></h2>
+        <h2><%= link_to costume.name, costume_path %></h2>
         <p><%= costume.address %></p>
         <p><%= costume.description %></p>
       </div>
