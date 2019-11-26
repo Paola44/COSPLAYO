@@ -1,5 +1,5 @@
 class Costume < ApplicationRecord
-  has_many :reservations
+  has_many :reservations, dependent: :destroy
   belongs_to :user
 
   validates :name, uniqueness: true, presence: true
