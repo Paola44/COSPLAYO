@@ -22,21 +22,21 @@ user1 = User.new(first_name: "Zinedine", last_name:"Zidane", email: "zinedine.zi
 user1.save!
 user2 = User.new(first_name: "Barack", last_name:"Obama", email: "barack.obama@yopmail.com", avatar: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
 user2.save!
-user3 = User.new(first_name: "Vladimir", last_name:"Poutine", email: "vladimir.poutine@yopmail.com", avatar_url: "donzzxpdvyrpcluubmpr.jpg", password: "secret")
+user3 = User.new(first_name: "Vladimir", last_name:"Poutine", email: "vladimir.poutine@yopmail.com", avatar: "donzzxpdvyrpcluubmpr.jpg", password: "secret")
 user3.save!
-user4 = User.new(first_name: "Brad", last_name:"Pitt", email: "brad.pitt@yopmail.com", avatar_url: "v1574779842/Brad-Pitt-dating_jshvsa.jpg", password: "secret")
+user4 = User.new(first_name: "Brad", last_name:"Pitt", email: "brad.pitt@yopmail.com", avatar: "v1574779842/Brad-Pitt-dating_jshvsa.jpg", password: "secret")
 user4.save!
-user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar_url: "will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg", password: "secret")
+user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: "will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg", password: "secret")
 user5.save!
-user6 = User.new(first_name: "Claude", last_name:"François", email: "claude.françois@yopmail.com", avatar_url: "photo_1331632580_yaqvwt.jpg", password: "secret")
+user6 = User.new(first_name: "Claude", last_name:"François", email: "claude.françois@yopmail.com", avatar: "photo_1331632580_yaqvwt.jpg", password: "secret")
 user6.save!
-user7 = User.new(first_name: "Arthur", last_name:"Rimbaud", email: "arthur.rimbaud@yopmail.com", avatar_url: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
+user7 = User.new(first_name: "Arthur", last_name:"Rimbaud", email: "arthur.rimbaud@yopmail.com", avatar: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
 user7.save!
-user8 = User.new(first_name: "Bonaparte", last_name:"Napoleon", email: "bonaparte.napoleon@yopmail.com", avatar_url: "ill_3451141_a9db_autopsie2_x1p1_udsaqt.jpg", password: "secret")
+user8 = User.new(first_name: "Bonaparte", last_name:"Napoleon", email: "bonaparte.napoleon@yopmail.com", avatar: "ill_3451141_a9db_autopsie2_x1p1_udsaqt.jpg", password: "secret")
 user8.save!
 
 puts 'Creating costumes...'
-costume1 = Costume.new(user: user1, name:"Iron man", description: "metalic armor blood and gold", image: "itv974hlnykchstlnoyx.jpg", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
+costume1 = Costume.new(user: user1, name:"Iron man", description: "metalic armor blood and gold", image: "Iron-Man-MK43-Suit-Iron-Man-Cosplay-Costume-Wearable-Made-to-Measure-and-Movie-Accurate-Iron_fhrivw.jpg", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
 costume1.save!
 costume2 = Costume.new(user: user2, name:"Spider man", description: "blue tights", image: "Spider-Man-far-from-home_tnjvvw.jpg", address: "Parker Industries Hudson River, New-York", price_per_day: "6 000$")
 costume2.save!
