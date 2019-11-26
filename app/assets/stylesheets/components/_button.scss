@@ -1,25 +1,27 @@
-.btn-flat-green {
+.btn-flat-accept {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: green;
+  background: $purple;
   transition: background 0.3s ease;
+  margin: 5px;
 }
 
-.btn-flat-green:hover {
-  background: gray;
+.btn-flat-accept:hover {
+  background: $light-purple;
   color: white;
 }
 
-.btn-flat-red {
+.btn-flat-decline {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: red;
+  background: $dark-purple;
   transition: background 0.3s ease;
+  margin: 5px;
 }
 
-.btn-flat-red:hover {
-  background: gray;
+.btn-flat-decline:hover {
+  background: $light-purple;
   color: white;
 }
