@@ -1,6 +1,16 @@
-<h2>Add your cosplay</h2>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Add a cosplay</h1>
 
-<%= simple_form_for @costume do |f| %>
-  <%= f.input :name %>
-  <%= f.submit 'Add', class: 'btn btn-primary' %>
-<% end %>
+      <%= simple_form_for @costume do |f| %>
+        <%= f.input :name %>
+  		<%= f.input :description %>
+        <%= f.input :address %>
+        <%= f.input :price_per_day %>
+        <%= f.input :image %>
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
