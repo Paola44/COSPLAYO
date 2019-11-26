@@ -1,0 +1,37 @@
+body {
+  background-color: #7B3587;
+}
+
+.home-background-image {
+  background-image: url("GOLDENCANONGRID.jpeg");
+  background-size: cover;
+  height: 100vh;
+  background-position: right 40% bottom 30%;
+}
+
+.title-and-baseline {
+  color: white;
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 54px;
+  left: 38px;
+
+  h1 {
+    margin: 5px 0;
+    text-shadow: 2px 2px $dark-purple;
+  }
+
+
+  p {
+    margin: 5px 0;
+    text-shadow: 1px 1px $dark-purple;
+  }
+
+  a {
+    margin: 20px 0px;
+  }
+
+}

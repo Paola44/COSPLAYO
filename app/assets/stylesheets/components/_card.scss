@@ -28,6 +28,17 @@ margin-bottom:15px;
   padding: 0 5px;
 }
 
+// card-product
+
+.cards-product-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
 .card-product {
   border-radius: 15px;
   overflow: hidden;
@@ -71,13 +82,36 @@ margin-bottom:15px;
 
   .card-product-infos {
     padding: 10px;
+    display: block;
+    margin: 0px 2px;
+
+    h2 {
+      font-family: righteous;
+      color: $gold;
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      font-weight: bold;
+      color: $medium-gray;
+      font-size: 15px;
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+
+    }
   }
 
   .card-product-reservation-buttons {
     padding-right: 10px;
+    margin: 10px;
   }
 
   .approved-color {
     color: $purple;
     font-size: 50px;
   }
+

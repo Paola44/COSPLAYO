@@ -2,13 +2,13 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: $purple;
+  background: $gold;
   transition: background 0.3s ease;
   margin: 5px;
 }
 
 .btn-flat-accept:hover {
-  background: $light-purple;
+  background: $gold-shadow;
   color: white;
 }
 
@@ -24,4 +24,10 @@
 .btn-flat-decline:hover {
   background: $light-purple;
   color: white;
+}
+
+.btn-flat-gold {
+  background-color: $gold;
+  font-family: righteous;
+  color: $dark-purple;
 }
