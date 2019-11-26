@@ -1,16 +1,22 @@
 <h1>Here are our costumes</h1>
 
-<% @costumes.each do |costume| %>
-  <div class="card-trip">
-    <%= link_to cl_image_tag("joey-nicotra-aQSPWSxCweY-unsplash_wziuyz.jpg",width: 200, height: 300, crop: :fill), costume_path(costume) %>
-    <div class="card-trip-infos">
-      <div>
-        <h2><%= link_to costume.name, costume_path %></h2>
-        <p><%= costume.address %></p>
-        <p><%= costume.description %></p>
+<div class="container">
+  <div class="row">
+    <% @costumes.each do |costume| %>
+      <div class="col-4">
+        <div class="card-trip">
+          <div class="card-trip-infos">
+            <div class="card-head">
+              <h2><%= costume.name %></h2>
+              <img src="https://res.cloudinary.com/dhf72r9rc/image/upload/v1574774151/josephine-menge-h7VBJRBcieM-unsplash_yyhyul.jpg" class="card-trip-user avatar-bordered" />
+            </div>
+            <p>Address :<%= costume.address %></p>
+            <p>Description : <%= costume.description %></p>
+            <%= cl_image_tag("joey-nicotra-aQSPWSxCweY-unsplash_wziuyz.jpg",width: 200, height: 300, crop: :fill, class: "img-card-bottom") %>
+            <h2 class="card-trip-pricing"><% costume.price_per_day %></h2>
+          </div>
+        </div>
       </div>
-      <h2 class="card-trip-pricing"><% costume.price_per_day %></h2>
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
-    </div>
+    <% end %>
   </div>
-<% end %>
+</div>
