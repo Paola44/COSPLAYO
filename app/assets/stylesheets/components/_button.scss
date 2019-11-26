@@ -1,0 +1,25 @@
+.btn-flat-green {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: green;
+  transition: background 0.3s ease;
+}
+
+.btn-flat-green:hover {
+  background: gray;
+  color: white;
+}
+
+.btn-flat-red {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: red;
+  transition: background 0.3s ease;
+}
+
+.btn-flat-red:hover {
+  background: gray;
+  color: white;
+}

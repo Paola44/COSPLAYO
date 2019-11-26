@@ -1,10 +1,21 @@
+<div class="container">
 
-<% @reservations.each do |reservation| %>
-  <div class="card-product">
-    <%= cl_image_tag reservation.costume.image %>
-    <div class="card-product-infos">
-      <h2><%= reservation.costume.name %></h2>
-      <p>Réservé par :  <%= reservation.user.first_name %></p>
+  <% @reservations.each do |reservation| %>
+    <div class="card-product ">
+      <%= cl_image_tag reservation.costume.image %>
+      <div class="card-product-infos">
+        <h2><%= reservation.costume.name %></h2>
+        <p>Réservé par :  <%= reservation.user.first_name %></p>
+        <p><%= reservation.status %></p>
+      </div>
+      <div class="d-flex justify-content-flex-end">
+        <% if reservation.status == 'pending' %>
+          <%= link_to "Accept", accept_owner_reservation_path(reservation), class: "btn btn-flat-green", method: :patch %>
+          <%= link_to "Decline", decline_owner_reservation_path(reservation), class: "btn btn-flat-red", method: :patch %>
+        <% end %>
+      </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+
+</div>
+
