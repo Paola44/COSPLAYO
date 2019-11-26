@@ -1,5 +1,10 @@
 
 <% @reservations.each do |reservation| %>
-  <%= reservation.costume.name %>
-  <%= reservation.user.first_name %>
+  <div class="card-product">
+    <%= cl_image_tag reservation.costume.image %>
+    <div class="card-product-infos">
+      <h2><%= reservation.costume.name %></h2>
+      <p>Réservé par :  <%= reservation.user.first_name %></p>
+    </div>
+  </div>
 <% end %>

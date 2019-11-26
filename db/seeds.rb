@@ -18,9 +18,9 @@ Reservation.destroy_all if Rails.env.development?
 
 
 puts 'Creating users...'
-user1 = User.new(first_name: "Zinedine", last_name:"Zidane", email: "zinedine.zidane@yopmail.com", avatar_url: "7755322402_zinedine-zidane-en-novembre-2012-a-marseille_k39skd.jpg", password: "secret")
+user1 = User.new(first_name: "Zinedine", last_name:"Zidane", email: "zinedine.zidane@yopmail.com", avatar: "7755322402_zinedine-zidane-en-novembre-2012-a-marseille_k39skd.jpg", password: "secret")
 user1.save!
-user2 = User.new(first_name: "Barack", last_name:"Obama", email: "barack.obama@yopmail.com", avatar_url: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
+user2 = User.new(first_name: "Barack", last_name:"Obama", email: "barack.obama@yopmail.com", avatar: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
 user2.save!
 
 puts 'Creating costumes...'
@@ -31,9 +31,9 @@ costume2.save!
 
 
 puts 'Creating reservations...'
-reservation1 = Reservation.new(user: user1, costume: costume1, starting_date: "12/03/2019", ending_date: "15/03/2019")
+reservation1 = Reservation.new(user: user2, costume: costume1, starting_date: "12/03/2019", ending_date: "15/03/2019")
 reservation1.save!
-reservation2 = Reservation.new(user: user2, costume: costume2, starting_date: "18/03/2019", ending_date: "22/03/2019")
+reservation2 = Reservation.new(user: user1, costume: costume2, starting_date: "18/03/2019", ending_date: "22/03/2019")
 reservation2.save!
 
 
