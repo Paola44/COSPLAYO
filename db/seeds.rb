@@ -55,15 +55,9 @@ costume7.save!
 
 
 puts 'Creating reservations...'
-<<<<<<< HEAD
 reservation1 = Reservation.new(user: user2, costume: costume1, starting_date: "12/03/2019", ending_date: "15/03/2019")
 reservation1.save!
 reservation2 = Reservation.new(user: user1, costume: costume2, starting_date: "18/03/2019", ending_date: "22/03/2019")
-=======
-reservation1 = Reservation.new(user: user1, costume: costume5, starting_date: "12/03/2019", ending_date: "15/03/2019")
-reservation1.save!
-reservation2 = Reservation.new(user: user2, costume: costume6, starting_date: "18/05/2019", ending_date: "22/05/2019")
->>>>>>> 748e4efbd155955706ce38a36eff8960b2f79e7c
 reservation2.save!
 reservation3 = Reservation.new(user: user3, costume: costume2, starting_date: "18/06/2019", ending_date: "22/06/2019")
 reservation3.save!
