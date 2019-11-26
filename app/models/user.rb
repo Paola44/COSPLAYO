@@ -5,7 +5,7 @@ class User < ApplicationRecord
 
   validates :first_name, uniqueness: { scope: :last_name }
   validates :email, uniqueness: true, presence: true
-  validates :avatar_url, presence: true
+  # validates :avatar, presence: true
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
