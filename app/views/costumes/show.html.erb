@@ -1,15 +1,22 @@
-<h1><% @costume.name %></h1>
-
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-    <div class="card-trip">
-      <%= cl_image_tag(@costume.image, height: 700, crop: :fill) %>
-      <div class="card-trip-infos">
-        <div>
-          <h2><%= @costume.name.capitalize %></h2>
-          <p><%= @costume.address %></p>
-          <p><%= @costume.description %></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="card-margin">
+      <div class="col-12 col-sm-6 col-md-8">
+        <div class="card-trip">
+          <%= cl_image_tag(@costume.image, height: 700, crop: :fill) %>
         </div>
-        <h2 class="card-trip-pricing">$<%= @costume.price_per_day %></h2>
+      </div>
+        <div class="col-12 col-sm-6 col-md-4">
+        <div class="card-trip-infos-color">
+          <div class="card-title-price">
+            <h2><%= @costume.name.capitalize %></h2>
+            <h2>$<%= @costume.price_per_day %></h2>
+          </div>
+          <p><strong>What is it : </strong><%= @costume.description %> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere assumenda tempora dolore odit, obcaecati libero cupiditate, quas vel vitae, in ratione rem doloribus sequi, repellendus fuga. Debitis obcaecati labore, molestiae?</p>
+          <p><strong>Where to find : </strong><%= @costume.address %></p>
+          <%= link_to "Book now - Be mine", "#", class: "btn btn-flat-gold-show" %>
+        </div>
       </div>
     </div>
   </div>
+</div>
