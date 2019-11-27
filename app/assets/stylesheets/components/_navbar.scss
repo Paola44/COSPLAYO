@@ -1,6 +1,5 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: linear-gradient(top, rgba(47,25,107,1) 0%,rgba(174,205,229,0) 100%);
   text-align: center;
   color: white;
   position: fixed;
@@ -12,6 +11,8 @@
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
   flex-direction: reverse;
+  background-color: $dark-purple;
+  color: white;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -20,4 +21,21 @@
 
 .navbar-height {
   height: 80px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: $gold;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
 }
