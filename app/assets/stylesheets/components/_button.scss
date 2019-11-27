@@ -32,6 +32,18 @@
   color: $dark-purple;
 }
 
+
 .btn-flat-gold:hover {
   background-color: $white;
+
+.btn-flat-gold-show {
+  background-color: $gold;
+  font-family: righteous;
+  color: $dark-purple;
+  margin-left: 5px;
+  width: 100%;
+
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 70px;
 }
