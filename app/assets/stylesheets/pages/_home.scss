@@ -3,7 +3,7 @@ body {
 }
 
 .home-background-image {
-  background-image: url("GOLDENCANONGRID.jpeg");
+  background-image: asset-url("GOLDENCANONGRID.jpeg");
   background-size: cover;
   height: 100vh;
   background-position: right 40% bottom 30%;
