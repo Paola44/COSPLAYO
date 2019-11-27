@@ -14,5 +14,18 @@ class CostumesController < ApplicationController
   end
 
   def create
+    @costume = Costume.new(costume_params)
+    @costume.user = current_user
+    if @costume.save!
+      redirect_to costume_path(@costume)
+
+    else
+      render 'new'
+    end
   end
+
+  def costume_params
+    params.require(:costume).permit(:name, :description, :address, :price_per_day, :image )
+  end
+
 end
