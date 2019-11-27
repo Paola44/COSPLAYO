@@ -36,7 +36,7 @@ user8 = User.new(first_name: "Bonaparte", last_name:"Napoleon", email: "bonapart
 user8.save!
 
 puts 'Creating costumes...'
-costume1 = Costume.new(user: user1, name:"Iron man", description: "metalic armor blood and gold", image: "itv974hlnykchstlnoyx.jpg", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
+costume1 = Costume.new(user: user1, name:"Iron man", description: "metalic armor blood and gold", image: "Iron-Man-MK43-Suit-Iron-Man-Cosplay-Costume-Wearable-Made-to-Measure-and-Movie-Accurate-Iron_fhrivw.jpg", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
 costume1.save!
 costume2 = Costume.new(user: user2, name:"Spider man", description: "blue tights", image: "Spider-Man-far-from-home_tnjvvw.jpg", address: "Parker Industries Hudson River, New-York", price_per_day: "6 000$")
 costume2.save!
