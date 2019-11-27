@@ -35,6 +35,7 @@
 
 .btn-flat-gold:hover {
   background-color: $white;
+}
 
 .btn-flat-gold-show {
   background-color: $gold;
@@ -46,4 +47,12 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   bottom: 70px;
+}
+
+.btn-flat-gold-submit {
+  background-color: $gold;
+  font-family: righteous;
+  color: $dark-purple;
+  margin-left: 5px;
+  margin-bottom: 10px;
 }
