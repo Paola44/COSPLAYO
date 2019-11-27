@@ -1,31 +1,98 @@
-.card-trip {
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-family: 'Indie Flower', cursive;
+  color: #4f1885;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-container a {
+  text-decoration: none;
+  color: #ec008e;
+  font-weight: bold;
+}
+
+.card-costume {
+  margin : 20px;
   display: flex;
   justify-content: space-evenly;
+  height: 580px;
+  position: relative;
+  .img-card-bottom {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }
 }
 
-ul {
-list-style:none;
-margin: auto;
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-li {
-margin-bottom:15px;
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
-.avatar-bordered {
-  border-radius: 50%;
-  height: 40px;
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
   width: 40px;
-}
-
-.card-trip-infos h2 {
-  display: block;
 }
 
 .card-head {
   display: flex;
   justify-content: space-between;
   padding: 0 5px;
+}
+
+
+.avatar {
+  border-radius: 50%;
+}
+
+.card-head p {
+  margin: 5px;
+}
+
+.fake-map {
+  background-color : pink;
+  height: 100vh;
+  width: 50%;
 }
 
 // card-product
@@ -114,4 +181,3 @@ margin-bottom:15px;
     color: $purple;
     font-size: 50px;
   }
-

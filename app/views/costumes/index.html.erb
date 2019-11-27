@@ -1,24 +1,24 @@
-<h1>Here are our costumes</h1>
+<h1>Magical cosplays !</h1>
 
-<div >
-  <ul>
+<div class="container card-container">
+  <div class="row">
+    <div class="fake-map"> fake map </div>
     <% @costumes.each do |costume| %>
-    <li>
-      <div class="card-trip">
-        <div class="card-trip-infos">
-          <div>
-            <div class="card-head">
-              <h2><%= costume.name %></h2>
-              <img src="https://res.cloudinary.com/dhf72r9rc/image/upload/v1574774151/josephine-menge-h7VBJRBcieM-unsplash_yyhyul.jpg" class="card-trip-user avatar-bordered" />
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <%= link_to costume_path(costume) do %>
+          <div class="card-trip">
+            <%= cl_image_tag(costume.image, height: 700, crop: :fill) %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= costume.name.capitalize %></h2>
+                <p><%= costume.description %></p>
+              </div>
+              <h2 class="card-trip-pricing">$<%= costume.price_per_day %></h2>
+              <%= cl_image_tag costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
             </div>
-            <p><%= costume.address %></p>
-            <p><%= costume.description %></p>
-            <%= cl_image_tag("joey-nicotra-aQSPWSxCweY-unsplash_wziuyz.jpg",width: 200, height: 300, crop: :fill) %>
           </div>
-          <h2 class="card-trip-pricing"><% costume.price_per_day %></h2>
-        </div>
+        <% end %>
       </div>
-    </li>
     <% end %>
-  </ul>
+  </div>
 </div>
