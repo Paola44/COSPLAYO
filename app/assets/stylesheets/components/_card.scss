@@ -28,14 +28,27 @@ margin-bottom:15px;
   padding: 0 5px;
 }
 
+// card-product
+
+.cards-product-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
 .card-product {
+  border-radius: 15px;
   overflow: hidden;
-  height: 120px;
+  padding: 10px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 20px;
+  display: flex;
 
   img {
     height: 100%;
@@ -56,9 +69,49 @@ margin-bottom:15px;
     margin-bottom: 0;
     margin-top: 8px;
   }
+}
+
+  .card-product-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+
+  }
 
   .card-product-infos {
-    padding: 16px;
+    padding: 10px;
+    display: block;
+    margin: 0px 2px;
+
+    h2 {
+      font-family: righteous;
+      color: $gold;
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      font-weight: bold;
+      color: $medium-gray;
+      font-size: 15px;
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+
+    }
   }
-}
+
+  .card-product-reservation-buttons {
+    padding-right: 10px;
+    margin: 10px;
+  }
+
+  .approved-color {
+    color: $purple;
+    font-size: 50px;
+  }
 
