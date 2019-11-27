@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row justify-content-center" >
     <div class="card-margin">
       <div class="col-12 col-sm-6 col-md-8">
         <div class="card-trip">
@@ -14,9 +14,19 @@
           </div>
           <p><strong>What is it : </strong><%= @costume.description %> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere assumenda tempora dolore odit, obcaecati libero cupiditate, quas vel vitae, in ratione rem doloribus sequi, repellendus fuga. Debitis obcaecati labore, molestiae?</p>
           <p><strong>Where to find : </strong><%= @costume.address %></p>
+          <div class="form-font">
+            <%= simple_form_for :search, method: "get" do |f| %>
+              <%= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+              <%= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+              <%= f.button :submit, "Go", class: "btn btn-flat-gold-submit" %>
+            <% end %>
+          </div>
+
           <%= link_to "Book now - Be mine", "#", class: "btn btn-flat-gold-show" %>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
