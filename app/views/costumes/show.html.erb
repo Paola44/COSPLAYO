@@ -1,16 +1,15 @@
-<h1><% The @costume.name %></h1>
+<h1><% @costume.name %></h1>
 
-<% @costumes.each do |costume| %>
-  <div class="card-trip">
-    <%= cl_image_tag("joey-nicotra-aQSPWSxCweY-unsplash_wziuyz.jpg",width: 400, height: 300, crop: :fill) %>
-    <div class="card-trip-infos">
-      <div>
-        <h2><%= costume.name %></h2>
-        <p><%= costume.address %></p>
-        <p><%= costume.description %></p>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card-trip">
+      <%= cl_image_tag(@costume.image, height: 700, crop: :fill) %>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= @costume.name.capitalize %></h2>
+          <p><%= @costume.address %></p>
+          <p><%= @costume.description %></p>
+        </div>
+        <h2 class="card-trip-pricing">$<%= @costume.price_per_day %></h2>
       </div>
-      <h2 class="card-trip-pricing"><% costume.price_per_day %></h2>
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
     </div>
   </div>
-<% end %>
