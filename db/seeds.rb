@@ -36,19 +36,26 @@ user8 = User.new(first_name: "Bonaparte", last_name:"Napoleon", email: "bonapart
 user8.save!
 
 puts 'Creating costumes...'
-costume1 = Costume.new(user: user1, name:"Iron man", description: "metalic armor blood and gold", image: "Iron-Man-MK43-Suit-Iron-Man-Cosplay-Costume-Wearable-Made-to-Measure-and-Movie-Accurate-Iron_fhrivw.jpg", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
+costume1 = Costume.new(user: user1, name:"Iron man", description: "metalic armor blood and gold", address: "10880 Malibu Point, 90265", price_per_day: "10 000$")
+costume1.remote_image_url = "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Iron_Man_bleeding_edge.jpg/250px-Iron_Man_bleeding_edge.jpg"
 costume1.save!
-costume2 = Costume.new(user: user2, name:"Spider man", description: "blue tights", image: "Spider-Man-far-from-home_tnjvvw.jpg", address: "Parker Industries Hudson River, New-York", price_per_day: "6 000$")
+costume2 = Costume.new(user: user2, name:"Spider man", description: "blue tights", address: "99 Av. des Champs-Élysées, 75008 Paris", price_per_day: "6 000$")
+costume2.remote_image_url = "http://image.jeuxvideo.com/medias-md/156208/1562078749-858-card.jpg"
 costume2.save!
-costume3 = Costume.new(user: user2, name:"batman", description: "grey tights", image: "5808e0cbcb75de5d119cedeb34175b1e_jhnqep.jpg", address: "gotam city", price_per_day: "6 000$")
+costume3 = Costume.new(user: user2, name:"batman", description: "grey tights", address: "1600 Pennsylvania Ave NW, Washington, DC 20500, États-Unis", price_per_day: "6 000$")
+costume3.remote_image_url = "https://www.sideshow.com/storage/product-images/903127/batman_dc-comics_feature.jpg"
 costume3.save!
-costume4 = Costume.new(user: user2, name:"Wolverine", description: "Yellow tights", image: "731576bc81c06188a8921910ff6cf462_x7wt6c.jpg", address: "Michigan", price_per_day: "9 000$")
+costume4 = Costume.new(user: user2, name:"Wolverine", description: "Yellow tights", address: "55 Rue du Faubourg Saint-Honoré, 75008 Paris", price_per_day: "9 000$")
+costume4.remote_image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhBrm8GljKO1ErBiApkadATgrWVd-jpCs_WcisacsUGpvZxP8dQ&s"
 costume4.save!
-costume5 = Costume.new(user: user2, name:"Ninja", description: "blue tights", image: "ptui1yephniroli8hfwf.jpg", address: "japon", price_per_day: "3 000$")
+costume5 = Costume.new(user: user2, name:"Mystic", description: "blue tights", address: "japon", price_per_day: "3 000$")
+costume5.remote_image_url = "http://www.geek-world.fr/Files/123187/Img/05/Marvel-Comics-statuette-Premium-Format-Mystique-Sideshow-5-zoom.jpg"
 costume5.save!
-costume6 = Costume.new(user: user2, name:"Terminator", description: "blue tights", image: "Terminator_c2gvky.jpg", address: "Chicago", price_per_day: "6 000$")
+costume6 = Costume.new(user: user2, name:"Batwoman", description: "black tights", address: "2 Rue Laennec, 44000 Nantes", price_per_day: "6 000$")
+costume6.remote_image_url = "https://topcomics.fr/wp-content/uploads/2019/09/classement-des-20-superheroines-dc-comics-les-plus-sexy-batwoman-kate-kane.jpg"
 costume6.save!
-costume7 = Costume.new(user: user3, name:"Indiana Jones", description: "lasso", image: "9c8b07dad68db0b15ab2cb0f236175cc_e7i3al.jpg", address: "Jungle", price_per_day: "1 000$")
+costume7 = Costume.new(user: user3, name:"Mera", description: "lasso", address: " 14 Rue de la Baclerie, 44000 Nantes", price_per_day: "1 000$")
+costume7.remote_image_url = "https://topcomics.fr/wp-content/uploads/2019/09/classement-des-20-superheroines-dc-comics-les-plus-sexy-mera.jpg"
 costume7.save!
 
 
