@@ -2,7 +2,6 @@
 
 <div class="container card-container">
   <div class="row">
-    <div class="fake-map"> fake map </div>
     <% @costumes.each do |costume| %>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <%= link_to costume_path(costume) do %>
@@ -22,3 +21,4 @@
     <% end %>
   </div>
 </div>
+<div class="fake-map"> fake map </div>
