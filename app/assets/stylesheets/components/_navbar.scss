@@ -6,13 +6,19 @@
   height: 100px;
   top: 0;
   width: 100%;
+  // padding-left: 0;
+  // padding-right: 0;
 }
 
 .navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  // flex-grow: 0;
+  margin-top: 12px;
+  padding-top: 1rem;
   flex-direction: reverse;
   background-color: $dark-purple;
   color: white;
+  margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -39,3 +45,15 @@
     background-color: transparent;
     border: 0;
 }
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
