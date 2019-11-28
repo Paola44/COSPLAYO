@@ -1,15 +1,16 @@
-<div class="row justify-content-center flex-container ">
+<div class="row justify-content-center">
 
   <h2>Edit your profil</h2>
 
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= f.error_notification %>
 
-  <%= cl_image_tag @user.avatar, crop: :fill, class: "flex-item avatar-very-large-border", alt: "avatar-bordered" %>
+  <div class ="avatar-edit-profil">  
+    <%= cl_image_tag @user.avatar, crop: :fill, class: "avatar-very-large-border", alt: "avatar-bordered" %>
+  </div>
+
 
     <div class="form-inputs">
-
-
 
       <%= f.input :email, required: true, autofocus: true %>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
