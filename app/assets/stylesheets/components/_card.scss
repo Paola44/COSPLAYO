@@ -119,16 +119,9 @@ h1 {
 }
 
 .card-margin {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 100px;
 }
-
-// .card-title-price {
-//   position: relative;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 10px;
-// }
 
 .card-head {
   display: flex;
@@ -237,3 +230,29 @@ h1 {
     color: $purple;
     font-size: 50px;
   }
+
+.container-fluid p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+.container-fluid h2 {
+  padding: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+.form-font {
+  padding: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+
+// .card-title-price {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 10px;
+// }
