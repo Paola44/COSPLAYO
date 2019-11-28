@@ -1,5 +1,5 @@
 class CostumesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :index]
+  skip_before_action :authenticate_user!, only: [:home, :index, :home]
 
   def index
     @costumes = Costume.all
