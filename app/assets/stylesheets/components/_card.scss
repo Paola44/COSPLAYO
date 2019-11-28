@@ -84,6 +84,7 @@ h1 {
 
 .card-trip-infos h2 {
   font-size: 24px;
+  color: #ec008e;
 }
 
 .card-trip-infos p {
@@ -94,28 +95,47 @@ h1 {
 .card-trip-infos-color p {
   color: white;
   padding: 10px;
+  padding-top: 10px;
   text-align: justify;
 }
 
-.card-trip-infos-color h2 {
-  color: white;
-  font-weight: bold;
+.card-trip-infos-color {
+  h2 {
+    color: white;
+    font-weight: bold;
+  }
+
+  h3 {
+    text-align: right;
+    color: pink;
+  }
 }
 
 .card-trip-pricing {
   border-radius: 50%;
+  height: 48px;
+  width: 48px;
   border: 0.5px solid lightgrey;
   padding: 5px;
   background-color: white;
   position: absolute;
   top: 10px;
   right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .price {
+    text-align: center;
+    justify-content: space-between;
+  }
 }
 
 .card-trip-pricing p {
   font-weight: bold;
   font-size: 16px;
   background-color: lightgrey;
+  text-align: center;
 }
 
 .card-margin {
@@ -249,10 +269,20 @@ h1 {
   padding-top: 0;
 }
 
-
-// .card-title-price {
-//   position: relative;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 10px;
+// .fa-euro-sign {
+//   padding-left: 50px;
 // }
+
+.form-font {
+  color: white;
+}
+
+.card-title-price h2 {
+  color: #ec008e;
+  text-shadow: 1px 1px 5px pink;
+  letter-spacing: 3px;
+}
+
+.card-title-price p {
+  padding-top: 10px;
+}

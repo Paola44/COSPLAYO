@@ -7,11 +7,11 @@
         <%= link_to costume_path(costume) do %>
           <div class="card-trip">
             <%= cl_image_tag(costume.image, height: 700, crop: :fill) %>
-            <p class="card-trip-pricing">$ <%= costume.price_per_day %></p>
+            <p class="card-trip-pricing"><span class="price">$ <%= costume.price_per_day %></span></p>
             <div class="card-trip-infos">
               <div>
                 <h2><%= costume.name.capitalize %></h2>
-                <p><%= costume.description %></p>
+                <p><%= costume.description.capitalize %></p>
               </div>
               <%#= cl_image_tag costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
             </div>
@@ -21,4 +21,14 @@
     <% end %>
   </div>
 </div>
-<!-- <div class="fake-map"> fake map </div> -->
+
+<!-- MAP -->
+
+<div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>
+

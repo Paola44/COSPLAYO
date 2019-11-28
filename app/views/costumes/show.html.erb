@@ -10,24 +10,37 @@
         <div class="card-trip-infos-color">
           <div class="card-title-price">
             <h2><%= @costume.name.capitalize %></h2>
+            <%= cl_image_tag @costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
           </div>
-          <p><%= @costume.description %></p>
-          <p><i class="fas fa-map-marker-alt"></i><%= @costume.address %></p>
+            <p><%= @costume.description.capitalize %></p>
+          <h3>$ <%= @costume.price_per_day %>/day</h3>
+          <p><i class="fas fa-map-marker-alt"></i> <%= @costume.address.capitalize %></p>
           <% if user_signed_in? && current_user.id != @costume.user_id %>
             <div class="form-font">
               <%= simple_form_for [@costume, @reservation] do |f| %>
                 <%= f.input :starting_date, as: :string, required: false, input_html: {class: "datepicker"} %>
                 <%= f.input :ending_date, as: :string, required: false, input_html: {class: "datepicker"} %>
-                <%= f.submit "Be mine", class: "btn btn-flat-gold-show" %><h2>$<%= @costume.price_per_day %>/day</h2>
+                <%= f.submit "Be mine", class: "btn btn-flat-gold-show" %>
               <% end %>
             </div>
           <% elsif !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           <% else %>
-            <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
           <% end %>
+          <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<!-- MAP -->
+
+<div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @marker.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>
