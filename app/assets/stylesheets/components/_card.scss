@@ -2,8 +2,8 @@ h1 {
   text-align: center;
   margin: 10px;
   margin-top: 100px;
-  font-family: 'Indie Flower', cursive;
-  color: #4f1885;
+  font-family: 'Righteous', cursive;
+  color: $gold;
 }
 
 .container {
@@ -39,6 +39,9 @@ h1 {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+  position: relative;
 }
 
 .card-trip > img {
@@ -55,13 +58,12 @@ h1 {
 }
 
 .card-trip p {
-  font-size: 12px;
-  opacity: .7;
+  font-size: 16px;
   margin: 0;
 }
 
 .card-trip .card-trip-infos {
-  padding: 16px;
+  padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -80,10 +82,19 @@ h1 {
   text-align: justify;
 }
 
+.card-trip-infos h2 {
+  font-size: 24px;
+}
+
+.card-trip-infos p {
+  color: #262f37;
+  font-size: 12px;
+}
+
 .card-trip-infos-color p {
   color: white;
   padding: 10px;
-   text-align: justify;
+  text-align: justify;
 }
 
 .card-trip-infos-color h2 {
@@ -91,16 +102,25 @@ h1 {
   font-weight: bold;
 }
 
-.card-margin {
-  margin-top: 50px;
-  margin-bottom: 100px;
+.card-trip-pricing {
+  border-radius: 50%;
+  border: 0.5px solid lightgrey;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.card-title-price {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+.card-trip-pricing p {
+  font-weight: bold;
+  font-size: 16px;
+  background-color: lightgrey;
+}
+
+.card-margin {
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .card-head {
@@ -210,3 +230,29 @@ h1 {
     color: $purple;
     font-size: 50px;
   }
+
+.container-fluid p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+.container-fluid h2 {
+  padding: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+.form-font {
+  padding: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+
+// .card-title-price {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 10px;
+// }
