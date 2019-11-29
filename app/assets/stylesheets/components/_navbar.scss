@@ -48,7 +48,11 @@
     border: 0;
 }
 
-// .navbar-toggler-icon {
+span.navbar-toggler-icon {
+  color: $gold;
+}
+
+// .navbar-light .navbar-toggler-icon {
 //   color: $gold;
 // }
 
