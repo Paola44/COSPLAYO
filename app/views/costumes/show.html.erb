@@ -10,7 +10,10 @@
         <div class="card-trip-infos-color">
           <div class="card-title-price">
             <h2><%= @costume.name.capitalize %></h2>
-            <%= cl_image_tag @costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
+            <div class="avatar-style">
+              <p>Provided by : </p>
+              <%= cl_image_tag @costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
+            </div>
           </div>
             <p><%= @costume.description.capitalize %></p>
           <h3>$ <%= @costume.price_per_day %>/day</h3>
@@ -18,16 +21,23 @@
           <% if user_signed_in? && current_user.id != @costume.user_id %>
             <div class="form-font">
               <%= simple_form_for [@costume, @reservation] do |f| %>
-                <%= f.input :starting_date, as: :string, required: false, input_html: {class: "datepicker"} %>
-                <%= f.input :ending_date, as: :string, required: false, input_html: {class: "datepicker"} %>
+                <%#= f.input :starting_date, as: :date, required: false, input_html: {class: "datepicker"} %>
+                <%#= f.input :ending_date, as: :string, required: false, input_html: {class: "datepicker"} %>
+                <div class="form-group">
+                  <%= f.date_field :starting_date, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                  <%= f.date_field :ending_date, class: 'form-control', min: Date.today + 3 %>
+                </div>
                 <%= f.submit "Be mine", class: "btn btn-flat-gold-show" %>
+                <%#= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
               <% end %>
             </div>
           <% elsif !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           <% else %>
+            <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
           <% end %>
-          <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
         </div>
       </div>
     </div>
