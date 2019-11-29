@@ -7,7 +7,7 @@
         <div class="card-product-infos row">
           <h2><%= reservation.costume.name %></h2>
           <p>Réservé à :  <%= reservation.costume.user.first_name %></p>
-          <p>Du <%= reservation.starting_date.strftime("%m/%d/%Y") %> au <%= reservation.ending_date.strftime("%m/%d/%Y") %></p>
+          <p>Du <%= reservation.starting_date.strftime("%d/%m/%Y") %> au <%= reservation.ending_date.strftime("%d/%m/%Y") %></p>
           <h3 class="approved-color" style="<%= 'font-weight: bold; text-transform: uppercase; color: black' unless reservation.status == 'pending' %>"><%= reservation.status %></h3>
         </div>
 
