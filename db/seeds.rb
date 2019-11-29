@@ -26,8 +26,8 @@ user3 = User.new(first_name: "Vladimir", last_name:"Poutine", email: "vladimir.p
 user3.save!
 user4 = User.new(first_name: "Brad", last_name:"Pitt", email: "brad.pitt@yopmail.com", avatar: "v1574779842/Brad-Pitt-dating_jshvsa.jpg", password: "secret")
 user4.save!
-# user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg"), password: "secret")
-# user5.save!
+user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg"), password: "secret")
+user5.save!
 user6 = User.new(first_name: "Claude", last_name:"François", email: "claude.françois@yopmail.com", avatar: "photo_1331632580_yaqvwt.jpg", password: "secret")
 user6.save!
 user7 = User.new(first_name: "Arthur", last_name:"Rimbaud", email: "arthur.rimbaud@yopmail.com", avatar: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
@@ -87,7 +87,7 @@ reservation3 = Reservation.new(user: user3, costume: costume2, starting_date: "1
 reservation3.save!
 reservation4 = Reservation.new(user: user4, costume: costume1, starting_date: "18/07/2019", ending_date: "22/07/2019")
 reservation4.save!
-reservation5 = Reservation.new(user: user4, costume: costume3, starting_date: "18/08/2019", ending_date: "22/08/2019")
+reservation5 = Reservation.new(user: user5, costume: costume3, starting_date: "18/08/2019", ending_date: "22/08/2019")
 reservation5.save!
 
 puts 'Finished!'
