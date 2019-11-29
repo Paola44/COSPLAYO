@@ -18,6 +18,16 @@
             <p><%= @costume.description.capitalize %></p>
           <h3>$ <%= @costume.price_per_day %>/day</h3>
           <p><i class="fas fa-map-marker-alt"></i> <%= @costume.address.capitalize %></p>
+
+          <div
+            id="map"
+            style="width: 100%;
+            height: 245px;"
+            data-markers="<%= @marker.to_json %>"
+            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+          ></div>
+
+
           <% if user_signed_in? && current_user.id != @costume.user_id %>
             <div class="form-font">
               <%= simple_form_for [@costume, @reservation] do |f| %>
@@ -35,21 +45,17 @@
           <% elsif !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           <% else %>
-          <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
+          <%= link_to "My collection", owner_costumes_path, class: "nav-link" %>
           <% end %>
         </div>
       </div>
     </div>
   </div>
+
+
+
 </div>
 
 
 <!-- MAP -->
 
-<div
-  id="map"
-  style="width: 100%;
-  height: 600px;"
-  data-markers="<%= @marker.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-></div>
