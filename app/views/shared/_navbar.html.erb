@@ -4,7 +4,9 @@
     <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon">   
+        <i class="fas fa-bars" style="color: #E2BD64; font-size:30px;"></i>
+    </span>
   </button>
 
 
@@ -15,25 +17,25 @@
           <%= cl_image_tag current_user.avatar, class: "avatar-very-large-border dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         </li>
         <li class="nav-item">
-          <%= link_to "Mon catalogue", owner_costumes_path, class: "nav-link" %>
+          <%= link_to "My cosplays", owner_costumes_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
+          <%= link_to "My cosplays rented", owner_reservations_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Mes achats", reservations_path, class: "nav-link" %>
+          <%= link_to "My rentals", reservations_path, class: "nav-link" %>
         </li>
-          <%= link_to "Créer un costume", new_costume_path, class: "nav-link" %>
+          <%= link_to "Create a cosplay", new_costume_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Mon profil", edit_user_registration_path, class: "nav-link" %>
+          <%= link_to "Profile", edit_user_registration_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
         </li>
       <% end %>
     </ul>
