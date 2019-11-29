@@ -87,7 +87,7 @@ reservation3 = Reservation.new(user: user3, costume: costume2, starting_date: "1
 reservation3.save!
 reservation4 = Reservation.new(user: user4, costume: costume1, starting_date: "18/07/2019", ending_date: "22/07/2019")
 reservation4.save!
-reservation5 = Reservation.new(user: user4, costume: costume3, starting_date: "18/08/2019", ending_date: "22/08/2019")
+reservation5 = Reservation.new(user: user5, costume: costume3, starting_date: "18/08/2019", ending_date: "22/08/2019")
 reservation5.save!
 
 puts 'Finished!'
