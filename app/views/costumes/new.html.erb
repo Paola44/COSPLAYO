@@ -1,13 +1,9 @@
-<div class="row justify-content-center">
-  <h1>Add a cosplay</h1>
-
-  <%= simple_form_for @costume do |f| %>
-    <%= f.input :name %>
-		<%= f.input :description%>
-    <%= f.input :address %>
-    <%= f.input :price_per_day %>
-    <%= f.input :image %>
-    <%= f.input :image_cache, as: :hidden %>
-    <%= f.button :submit, class: 'btn btn-flat-gold ' %>
-  <% end %>
-</div>
+<%= simple_form_for @costume do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description%>
+  <%= f.input :address %>
+  <%= f.input :price_per_day %>
+  <%= f.input :image %>
+  <%= f.input :image_cache, as: :hidden %>
+  <%= f.button :submit, class: 'btn btn-flat-gold ' %>
+<% end %>
