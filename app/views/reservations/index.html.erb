@@ -2,13 +2,18 @@
 
   <% @reservations.each do |reservation| %>
     <div class="card-product">
-      <%= cl_image_tag reservation.costume.image %>
-      <div class="card-product-content row">
-        <div class="card-product-infos row">
+      <%#= cl_image_tag (reservation.costume.image, height: 550, width: 300, crop: :fill)%>
+      <div class="card-costume-img" style="background-image: url(<%= cl_image_path reservation.costume.image, height: 250, crop: :fill; %>)"></div>
+      <%#= cl_image_tag reservation.costume.image %>
+      <%#= cl_image_tag(@costume.image, height: 700, crop: :fill) %>
+      <div class="card-product-content">
+        <div class="card-product-infos">
           <h2><%= reservation.costume.name %></h2>
-          <p>Réservé à :  <%= reservation.costume.user.first_name %></p>
-          <p>Du <%= reservation.starting_date.strftime("%m/%d/%Y") %> au <%= reservation.ending_date.strftime("%m/%d/%Y") %></p>
-          <h3 class="approved-color" style="<%= 'font-weight: bold; text-transform: uppercase; color: black' unless reservation.status == 'pending' %>"><%= reservation.status %></h3>
+
+          <p><i class="fas fa-user"></i> <%= reservation.costume.user.first_name %></p>
+          <p><i class="far fa-calendar-alt"></i> <%= reservation.starting_date.strftime("%d/%m/%Y") %> au <%= reservation.ending_date.strftime("%d/%m/%Y") %></p>
+          <h3 class="reservation-status pt-5 text-center <%= reservation.status %>-color"><%= reservation.status.capitalize %></h3>
+
         </div>
 
       </div>
