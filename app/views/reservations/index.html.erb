@@ -9,9 +9,11 @@
       <div class="card-product-content">
         <div class="card-product-infos">
           <h2><%= reservation.costume.name %></h2>
+
           <p><i class="fas fa-user"></i> <%= reservation.costume.user.first_name %></p>
-          <p><i class="far fa-calendar-alt"></i> <%= reservation.starting_date.strftime("%m/%d/%Y") %> au <%= reservation.ending_date.strftime("%m/%d/%Y") %></p>
+          <p><i class="far fa-calendar-alt"></i> <%= reservation.starting_date.strftime("%d/%m/%Y") %> au <%= reservation.ending_date.strftime("%d/%m/%Y") %></p>
           <h3 class="reservation-status pt-5 text-center <%= reservation.status %>-color"><%= reservation.status.capitalize %></h3>
+
         </div>
 
       </div>
