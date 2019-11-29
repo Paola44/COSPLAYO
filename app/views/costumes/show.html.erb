@@ -29,8 +29,8 @@
           <% elsif !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           <% else %>
-          <% end %>
           <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
+          <% end %>
         </div>
       </div>
     </div>
