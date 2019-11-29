@@ -26,7 +26,7 @@ user3 = User.new(first_name: "Vladimir", last_name:"Poutine", email: "vladimir.p
 user3.save!
 user4 = User.new(first_name: "Brad", last_name:"Pitt", email: "brad.pitt@yopmail.com", avatar: "v1574779842/Brad-Pitt-dating_jshvsa.jpg", password: "secret")
 user4.save!
-user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: "will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg", password: "secret")
+user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg"), password: "secret")
 user5.save!
 user6 = User.new(first_name: "Claude", last_name:"François", email: "claude.françois@yopmail.com", avatar: "photo_1331632580_yaqvwt.jpg", password: "secret")
 user6.save!
