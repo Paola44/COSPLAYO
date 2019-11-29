@@ -2,9 +2,9 @@ import flatpickr from "flatpickr"
 import "flatpickr/dist/flatpickr.min.css" // Note this is important!
 import rangePlugin from "flatpickr/dist/plugins/rangePlugin"
 
-flatpickr(".datepicker", {})
+// flatpickr(".datepicker", {})
 
-// flatpickr(".datepicker", {
-//   altInput: true,
-//   plugins: [new rangePlugin({ input: "#range_end"})]
-// })
+flatpickr(".datepicker", {
+  // altInput: true,
+  plugins: [new rangePlugin({ input: "#reservation_ending_date" })]
+})
