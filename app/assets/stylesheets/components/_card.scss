@@ -108,6 +108,7 @@ h1 {
   h3 {
     text-align: right;
     color: pink;
+    padding-right: 10px;
   }
 }
 
@@ -146,6 +147,16 @@ h1 {
 
 .avatar {
   border-radius: 50%;
+}
+
+.avatar-style {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 12px;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .card-head p {
@@ -274,19 +285,19 @@ h1 {
 
 .card-title-price {
   margin-bottom: 12px;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .card-title-price h2 {
   color: #ec008e;
-  text-shadow: 1px 1px 5px pink;
+  text-shadow: 1px 1px 10px $dark-purple;
   letter-spacing: 3px;
-  // border: $darkpurple;
+  border: $dark-purple;
+  margin-bottom: 0;
 }
 
 .card-title-price p {
   padding-top: 10px;
 }
 
-.avatar-bordered {
-  margin-left: 10px;
-}

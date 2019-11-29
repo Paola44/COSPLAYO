@@ -10,7 +10,10 @@
         <div class="card-trip-infos-color">
           <div class="card-title-price">
             <h2><%= @costume.name.capitalize %></h2>
-            <%= cl_image_tag @costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
+            <div class="avatar-style">
+              <p>Provided by : </p>
+              <%= cl_image_tag @costume.user.avatar, crop: :thumb, gravity: :face, width: 40, height: 40, class: "card-trip-user avatar-bordered" %>
+            </div>
           </div>
             <p><%= @costume.description.capitalize %></p>
           <h3>$ <%= @costume.price_per_day %>/day</h3>
