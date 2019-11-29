@@ -24,13 +24,13 @@
                 <%= f.input :starting_date, as: :string, required: false, input_html: {class: "datepicker"} %>
                 <%= f.input :ending_date, as: :string, required: false, input_html: {class: "datepicker"} %>
                 <%= f.submit "Be mine", class: "btn btn-flat-gold-show" %>
+                <%#= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
               <% end %>
             </div>
           <% elsif !user_signed_in? %>
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           <% else %>
           <% end %>
-          <%= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
         </div>
       </div>
     </div>
