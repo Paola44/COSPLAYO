@@ -18,21 +18,21 @@ Reservation.destroy_all if Rails.env.development?
 
 
 puts 'Creating users...'
-user1 = User.new(first_name: "Zinedine", last_name:"Zidane", email: "zinedine.zidane@yopmail.com", avatar: "7755322402_zinedine-zidane-en-novembre-2012-a-marseille_k39skd.jpg", password: "secret")
+user1 = User.new(first_name: "Zinedine", last_name:"Zidane", email: "zinedine.zidane@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/7755322402_zinedine-zidane-en-novembre-2012-a-marseille_k39skd.jpg"), password: "secret")
 user1.save!
-user2 = User.new(first_name: "Barack", last_name:"Obama", email: "barack.obama@yopmail.com", avatar: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
+user2 = User.new(first_name: "Barack", last_name:"Obama", email: "barack.obama@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/_93339875_obamalaughing_klrw8x.jpg"), password: "secret")
 user2.save!
-user3 = User.new(first_name: "Vladimir", last_name:"Poutine", email: "vladimir.poutine@yopmail.com", avatar: "donzzxpdvyrpcluubmpr.jpg", password: "secret")
+user3 = User.new(first_name: "Vladimir", last_name:"Poutine", email: "vladimir.poutine@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/donzzxpdvyrpcluubmpr.jpg"), password: "secret")
 user3.save!
-user4 = User.new(first_name: "Brad", last_name:"Pitt", email: "brad.pitt@yopmail.com", avatar: "v1574779842/Brad-Pitt-dating_jshvsa.jpg", password: "secret")
+user4 = User.new(first_name: "Brad", last_name:"Pitt", email: "brad.pitt@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/v1574779842/Brad-Pitt-dating_jshvsa.jpg"), password: "secret")
 user4.save!
-# user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg"), password: "secret")
-# user5.save!
-user6 = User.new(first_name: "Claude", last_name:"François", email: "claude.françois@yopmail.com", avatar: "photo_1331632580_yaqvwt.jpg", password: "secret")
+user5 = User.new(first_name: "Will", last_name:"Smith", email: "will.smith@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/will-smith-choque-par-le-sexisme-de-trump_m3um9r.jpg"), password: "secret")
+user5.save!
+user6 = User.new(first_name: "Claude", last_name:"François", email: "claude.françois@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/photo_1331632580_yaqvwt.jpg"), password: "secret")
 user6.save!
-user7 = User.new(first_name: "Arthur", last_name:"Rimbaud", email: "arthur.rimbaud@yopmail.com", avatar: "_93339875_obamalaughing_klrw8x.jpg", password: "secret")
+user7 = User.new(first_name: "Arthur", last_name:"Rimbaud", email: "arthur.rimbaud@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/_93339875_obamalaughing_klrw8x.jpg"), password: "secret")
 user7.save!
-user8 = User.new(first_name: "Bonaparte", last_name:"Napoleon", email: "bonaparte.napoleon@yopmail.com", avatar: "ill_3451141_a9db_autopsie2_x1p1_udsaqt.jpg", password: "secret")
+user8 = User.new(first_name: "Bonaparte", last_name:"Napoleon", email: "bonaparte.napoleon@yopmail.com", avatar: File.open(Rails.root.join("db/fixtures/ill_3451141_a9db_autopsie2_x1p1_udsaqt.jpg"), password: "secret")
 user8.save!
 
 puts 'Creating costumes...'
