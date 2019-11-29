@@ -40,6 +40,7 @@
                   <%= f.date_field :ending_date, class: 'form-control', min: Date.today + 3 %>
                 </div>
                 <%= f.submit "Be mine", class: "btn btn-flat-gold-show" %>
+                <%#= link_to "Mes ventes", owner_reservations_path, class: "nav-link" %>
               <% end %>
             </div>
           <% elsif !user_signed_in? %>
