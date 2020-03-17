@@ -49,7 +49,7 @@ costume4 = Costume.new(user: user2, name:"Wolverine", description: "Lorem ipsum 
 costume4.remote_image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhBrm8GljKO1ErBiApkadATgrWVd-jpCs_WcisacsUGpvZxP8dQ&s"
 costume4.save!
 costume5 = Costume.new(user: user2, name:"Mystic", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quo, aspernatur? Illum, maiores pariatur omnis, veritatis voluptates ipsa earum, deleniti tempora minima qui voluptatum ullam. Dolorum quos quam fugit quis.", address: "japon", price_per_day: "300$")
-costume5.remote_image_url = "http://www.geek-world.fr/Files/123187/Img/05/Marvel-Comics-statuette-Premium-Format-Mystique-Sideshow-5-zoom.jpg"
+costume5.remote_image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhBrm8GljKO1ErBiApkadATgrWVd-jpCs_WcisacsUGpvZxP8dQ&s"
 costume5.save!
 costume6 = Costume.new(user: user2, name:"Batwoman", description: "	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis atque nulla magnam maxime perferendis voluptates iusto provident sequi perspiciatis at, voluptatum tempora vitae explicabo quae in dolorum ullam obcaecati!", address: "2 Rue Laennec, 44000 Nantes", price_per_day: "600$")
 costume6.remote_image_url = "https://topcomics.fr/wp-content/uploads/2019/09/classement-des-20-superheroines-dc-comics-les-plus-sexy-batwoman-kate-kane.jpg"
