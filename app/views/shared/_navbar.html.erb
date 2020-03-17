@@ -14,7 +14,7 @@
     <ul class="navbar-nav mr-auto navbar-front">
       <% if user_signed_in? %>
         <li class="nav-item">
-          <%= cl_image_tag current_user.avatar, class: "avatar-very-large-border dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <%#= cl_image_tag current_user.avatar, class: "avatar-very-large-border dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         </li>
         <li class="nav-item">
           <%= link_to "My cosplays", owner_costumes_path, class: "nav-link" %>
